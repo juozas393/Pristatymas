@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+    .login-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .login-container h2 {
+      margin-bottom: 20px;
+    }
+    .login-container input {
+      display: block;
+      width: 100%;
+      max-width: 300px;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .login-container button {
+      width: 100%;
+      max-width: 300px;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .login-container button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+<div class="login-container">
+  <h2>Register Page</h2>
+  <input type="text" id="new-username" placeholder="Username">
+  <input type="password" id="new-password" placeholder="Password">
+  <button onclick="registerUser()">Register</button>
+</div>
+
+<script>
+  function registerUser() {
+    const username = document.getElementById("new-username").value;
+    const password = document.getElementById("new-password").value;
+
+    // Registration logic here (e.g., save the credentials or send them to a server)
+
+    alert('User registered successfully!');
+    window.location.href = "loginPage.html";
+  }
+</script>
+</body>
+</html>
