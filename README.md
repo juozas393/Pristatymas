@@ -1,0 +1,2 @@
+# Pristatymas
+Informaciniu sistemu FINAL
